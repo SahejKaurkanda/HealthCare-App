@@ -5,68 +5,68 @@ Patients:
     -gender
     -contactNumber
     -emailAddress
-address
-createdAt
+    -address
+    -createdAt
+
 MedicalRecords:
+    -recordId
+    -patientId
+    -doctorId
+    -diagnosis
+    -prescriptions
+    -testResults
+    -admissionDate
+    -dischargeDate
+    -createdAt
 
-recordId
-patientId
-doctorId
-diagnosis
-prescriptions
-testResults
-admissionDate
-dischargeDate
-createdAt
 Doctors:
+   -doctorId
+   -doctorName
+   -specialization
+   -contactNumber
+   -emailAddress
+   -createdAt
 
-doctorId
-doctorName
-specialization
-contactNumber
-emailAddress
-createdAt
 Appointments:
+   -appointmentId
+   -patientId
+   -doctorId
+   -appointmentDateTime
+   -status
+   -createdAt
 
-appointmentId
-patientId
-doctorId
-appointmentDateTime
-status
-createdAt
 Medications:
+   -medicationId
+   -patientId
+   -doctorId
+   -medicationName
+   -dosage
+   -schedule
+   -startDate
+   -endate
+   -createdAt
 
-medicationId
-patientId
-doctorId
-medicationName
-dosage
-schedule
-startDate
-endDate
-createdAt
 LabResults:
+   -resultId
+   -patientId
+   -testType
+   -result
+   -recordedBy
+   -timestamp
+   -createdAt
 
-resultId
-patientId
-testType
-result
-recordedBy
-timestamp
-createdAt
 BillingInfo:
+   -billId
+   -patientId
+   -totalAmount
+   -paymentStatus
+   -paymentDate
+   -createdAt
 
-billId
-patientId
-totalAmount
-paymentStatus
-paymentDate
-createdAt
 InsuranceInfo:
-
-insuranceId
-patientId
-insuranceProvider
-policyNumber
-coverageDetails
-createdAt
+    -insuranceId
+    -patientId
+    -insuranceProvider
+    -policyNumber
+    -coverageDetails
+    -createdAt

@@ -1,0 +1,72 @@
+Patients:
+    -patientId
+    -patientName
+    -dateOfBirth
+    -gender
+    -contactNumber
+    -emailAddress
+address
+createdAt
+MedicalRecords:
+
+recordId
+patientId
+doctorId
+diagnosis
+prescriptions
+testResults
+admissionDate
+dischargeDate
+createdAt
+Doctors:
+
+doctorId
+doctorName
+specialization
+contactNumber
+emailAddress
+createdAt
+Appointments:
+
+appointmentId
+patientId
+doctorId
+appointmentDateTime
+status
+createdAt
+Medications:
+
+medicationId
+patientId
+doctorId
+medicationName
+dosage
+schedule
+startDate
+endDate
+createdAt
+LabResults:
+
+resultId
+patientId
+testType
+result
+recordedBy
+timestamp
+createdAt
+BillingInfo:
+
+billId
+patientId
+totalAmount
+paymentStatus
+paymentDate
+createdAt
+InsuranceInfo:
+
+insuranceId
+patientId
+insuranceProvider
+policyNumber
+coverageDetails
+createdAt
